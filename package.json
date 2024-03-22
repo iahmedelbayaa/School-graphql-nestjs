@@ -28,6 +28,7 @@
     "@types/mongodb": "^4.0.7",
     "apollo-server-core": "^3.13.0",
     "apollo-server-express": "^3.13.0",
+    "class-validator": "^0.13.2",
     "graphql": "^14.6.0",
     "graphql-tools": "^9.0.1",
     "mongodb": "^5.9.2",
