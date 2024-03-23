@@ -18,7 +18,7 @@ WORKDIR /app
 
 COPY package*.json .
 
-RUN npm install --production
+RUN npm install --production --force
 
 COPY --from=build ./app/dist ./dist
 
