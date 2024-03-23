@@ -2,10 +2,12 @@ import { Injectable } from '@nestjs/common';
 import { Repository } from 'typeorm';
 import { StudentEntity } from './student.entity';
 import { CreateStudentInput } from './student.input';
+import { InjectRepository } from '@nestjs/typeorm';
 
 @Injectable()
 export class StudentService {
     constructor(
+        @InjectRepository(StudentEntity)
         private studentRepository: Repository<StudentEntity>
     ) { }
 
@@ -25,3 +27,5 @@ export class StudentService {
 
     
 }
+
+
